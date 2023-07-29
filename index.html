@@ -100,47 +100,52 @@ jQuery(".main_img_c").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,d
         <div class="app_top"><p>新闻资讯<span>NEWS</span></p></div>
       </div>
       <div class="news_bottom">
-        <ul class="infoList" id="infoList">{% for post in site.categories["learning-exchange"] %}
+        <ul class="infoList" id="infoList">
+
           <li class="li">
             <div class="date">
-              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
-              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+              <p class="day"><a style="color:#004da1">15</a></p>
+              <span class="month"><a style="color:#004da1">2023-06</a></span>
             </div>
             <div class="text">
-              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a>One paper got accepted by NDSS 2024 (CCF-A). Congrats to Huiling</a></h3>
+              <p><a>Periscope: Eavesdropping on Black-box Mobile Devices via Audio Amplifier's EMR, Huiling Chen,Wenqiang Jin*(通讯)，Yupeng Hu*(共同通讯), Zhengyu Ning, Kenli Li, Zheng Qin, Mingxing Duan, Yong Xie, Daibo Liu, Ming Li.</a></p>
             </div>
-          </li>{% endfor %}{% for post in site.categories["entertainment"] %}
+          </li>
+
           <li class="li">
             <div class="date">
-              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
-              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+              <p class="day"><a style="color:#004da1">20</a></p>
+              <span class="month"><a style="color:#004da1">2023-04</a></span>
             </div>
             <div class="text">
-              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a>One paper got accepted by IEEE TIFS (CCF-A)</a></h3>
+              <p><a>LtRFT: Mitigate the Low-Rate Data Plane DDoS Attack with Learning-To-Rank Enabled Flow Tables;Tang, Dan; Yan, Yudong; Gao, Chenjun; Liang, Wei; Jin, Wenqiang*（通讯）</a></p>
             </div>
-          </li>{% endfor %}{% for post in site.categories["academic-exchange"] %}
+          </li>
+
           <li class="li">
             <div class="date">
-              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
-              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+              <p class="day"><a style="color:#004da1">12</a></p>
+              <span class="month"><a style="color:#004da1">2023-04</a></span>
             </div>
             <div class="text">
-              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a>One paper got accepted by IEEE TSC (CCF-A)</a></h3>
+              <p><a>GASF-IPP: Detection and Mitigation of LDoS Attack in SDN. Tang, Dan; Wang, Siyuan; Liu, Boru; Jin, Wenqiang; Zhang, Jiliang</a></p>
             </div>
-          </li>{% endfor %}{% for post in site.categories["project-cooperation"] %}
+          </li>
+
           <li class="li">
             <div class="date">
-              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
-              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+              <p class="day"><a style="color:#004da1">16</a></p>
+              <span class="month"><a style="color:#004da1">2023-01</a></span>
             </div>
             <div class="text">
-              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a>发表专利</a></h3>
+              <p><a>Patent：一种异构物联网设备的双因素认证方法 CN114760142A.</a></p>
             </div>
-          </li>{% endfor %}
+          </li>
+
         </ul>
       </div>
     </div>

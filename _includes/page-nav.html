@@ -1,0 +1,27 @@
+<div class="info_l" id="temp_l">
+    <div class="left_ul">
+      <ul class="ul">{% if page.category == 'people' %}
+        <li class="{% if page.type == 'PI' %}this{% endif %}"><a title="PI" href="{{ site.url }}/teacher/">PI</a></li>
+        <li class="{% if page.type == 'co-pi' %}this{% endif %}"><a title="Core Collaborators" href="{{ site.url }}/co-pi/">Core Collaborators</a></li>
+        <li class="{% if page.type == '博士后' %}this{% endif %}"><a title="博士后" href="{{ site.url }}/postdoctor/">博士后</a></li>
+        <li class="{% if page.type == '博士生' %}this{% endif %}"><a title="博士生" href="{{ site.url }}/doctor/">博士生</a></li>
+        <li class="{% if page.type == '硕士生' %}this{% endif %}"><a title="硕士生" href="{{ site.url }}/master/">硕士生</a></li>
+        <li class="{% if page.type == '本科生' %}this{% endif %}"><a title="职工" href="{{ site.url }}/staff/">本科生</a></li>
+        {% endif %}{% if page.category == 'publications' %}
+        <li class="{% if page.type == '论文' %}this{% endif %}"><a title="论文" href="{{ site.url }}/paper/">论文</a></li>
+        <li class="{% if page.type == '专利' %}this{% endif %}"><a title="专利" href="{{ site.url }}/patent/">专利</a></li>
+        <li class="{% if page.type == '获奖' %}this{% endif %}"><a title="获奖" href="{{ site.url }}/award/">获奖</a></li>
+        {% endif %}{% if page.category == 'research' %}
+        <li class="{% if page.type == 'Periscope' %}this{% endif %}"><a title="Periscope" href="{{ site.url }}/soft-robotics/">Periscope</a></li>
+        <li class="{% if page.type == 'CycleGuard' %}this{% endif %}"><a title="CycleGuard" href="{{ site.url }}/module-climbing/">CycleGuard</a></li>
+        <!-- <li class="{% if page.type == '共融操作' %}this{% endif %}"><a title="共融操作" href="{{ site.url }}/human-robotics/">共融操作</a></li>
+        <li class="{% if page.type == 'SLAM' %}this{% endif %}"><a title="SLAM" href="{{ site.url }}/slam/">SLAM</a></li>
+        <li class="{% if page.type == '智能工业' %}this{% endif %}"><a title="智能工业" href="{{ site.url }}/intelligent-industry/">智能工业</a></li> -->
+        {% endif %}{% if page.category == 'lab-news' %}
+<!--        <li class="{% if page.type == '学习交流' %}this{% endif %}"><a title="学习交流" href="{{ site.url }}/learning-exchange/">学习交流</a></li>-->
+<!--        <li class="{% if page.type == '文娱活动' %}this{% endif %}"><a title="文娱活动" href="{{ site.url }}/entertainment/">文娱活动</a></li>-->
+        {% endif %}{% if page.category == 'contact' %}
+        <li class="{% if page.type == '联系我们' %}this{% endif %}"><a title="联系方式" href="{{ site.url }}/contact/">联系我们</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>

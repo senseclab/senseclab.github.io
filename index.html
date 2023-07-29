@@ -1,0 +1,149 @@
+---
+layout: default
+category: home
+full_title: 物联网感知与安全实验室
+---
+<div class="main_img">
+  <div class="main_img_c">
+    <div class="bd">
+      <div class="nav_shadow"></div>
+      <ul>
+        <li><a href="{{ site.url }}/soft-robotics/"><img src="/images/home/billboard-1.png"></a></li>
+        <li><a href="{{ site.url }}/module-climbing/"><img src="/images/home/billboard-2.png"></a></li>
+        <li><a href="{{ site.url }}/human-robotics/"><img src="/images/home/billboard-3.png"></a></li>
+        <li><a href="{{ site.url }}/slam/"><img src="/images/home/billboard-4.jpeg"></a></li>
+        <li><a href="{{ site.url }}/intelligent-industry/"><img src="/images/home/billboard-5.png"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+jQuery(".main_img_c").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,delayTime:700,interTime:5000});
+</script>
+<div class="main_doc">
+  <div class="main_doc_center">
+    <div class="main_about_us" style="margin-bottom:28px">
+      <div class="about_top">
+        <div class="app_top">
+          <div class="app_top"><p>实验室简介<span>ABOUT SenSec</span><span style="margin-right:458px"></span>联系方式<span>CONTACT</span></p></div>
+        </div>
+      </div>
+      <div class="about_bottom">
+        <div class="center" style="text-indent:2em"><p><b>物联网感知与安全实验室 (IoT Sensing and Security Lab, abbr. SenSec Lab) </b> 是一个专注于物联网（IoT）技术研究的创新型实验室。实验室集中研究物联网设备的感知能力、数据处理和分析、以及相关的系统安全问题。
+          物联网感知安全实验室的研究领域主要包含：传感安全、数据安全、普适计算、隐私保护、以及物联网设备的轻量级加密。我们的目标是通过研究创新和落地应用，提升物联网设备的感知能力、数据处理能力，同时也确保设备和系统的安全性。
+          实验室拥有一支高水平的研究团队，团队成员包括多名资深教授、博士、博士后、硕士研究生以及本科生。</p></div>
+        <div class="right">
+          <div class="bd">
+              <div class="contact">
+                <p><img src="/images/home/icon2.jpg">负责人：<a href="http://csee.hnu.edu.cn/people/jinwenqiang">靳文强</a></p>
+                <p><img src="/images/home/icon3.jpg">邮箱：wqjin [at] hnu dot edu dot cn</p>
+                <p><img src="/images/home/icon6.png">地址：湖南省 长沙市(410000) 岳麓区 麓山南路2号 湖南大学 信息科学与工程学院</p>
+              </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          jQuery(".about_bottom .right").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50,delayTime:1000});
+        </script>
+      </div>
+    </div>
+    <div class="main_app">
+      <div class="app_top">
+        <div class="app_top"><p>研究方向<span>RESEARCH DIRECTION</span></p></div>
+      </div>
+      <div class="app_bottom">
+        <ul>
+          <li class="tran_all">
+            <!-- <a href="{{ site.url }}/soft-robotics/" class="tran_all"> -->
+              <img src="/images/research/soft-robotics.jpg" alt="感知安全">
+              <p class="pt">感知安全</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <!-- <a href="{{ site.url }}/module-climbing/" class="tran_all"> -->
+              <img src="/images/research/module-climbing.jpg" alt="数据安全">
+              <p class="pt">数据安全</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <!-- <a href="{{ site.url }}/human-robotics/" class="tran_all"> -->
+              <img src="/images/research/human-robotics.jpg" alt="普适计算">
+              <p class="pt">普适计算</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <!-- <a href="{{ site.url }}/slam/" class="tran_all"> -->
+              <img src="/images/research/slam.jpg" alt="隐私保护">
+              <p class="pt">隐私保护</p>
+            </a>
+          </li>
+          <li class="tran_all">
+            <!-- <a href="{{ site.url }}/intelligent-industry/" class="tran_all"> -->
+              <img src="/images/research/intelligent-industry.jpg" alt="轻量级加密">
+              <p class="pt">轻量级加密</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main_news">
+      <div class="app_top">
+        <div class="app_top"><p>新闻资讯<span>NEWS</span></p></div>
+      </div>
+      <div class="news_bottom">
+        <ul class="infoList" id="infoList">{% for post in site.categories["learning-exchange"] %}
+          <li class="li">
+            <div class="date">
+              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+            </div>
+            <div class="text">
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+            </div>
+          </li>{% endfor %}{% for post in site.categories["entertainment"] %}
+          <li class="li">
+            <div class="date">
+              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+            </div>
+            <div class="text">
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+            </div>
+          </li>{% endfor %}{% for post in site.categories["academic-exchange"] %}
+          <li class="li">
+            <div class="date">
+              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+            </div>
+            <div class="text">
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+            </div>
+          </li>{% endfor %}{% for post in site.categories["project-cooperation"] %}
+          <li class="li">
+            <div class="date">
+              <p class="day"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%d" }}</a></p>
+              <span class="month"><a href="{{ site.url }}{{ post.url }}" style="color:#004da1">{{ post.date | date:"%Y-%m" }}</a></span>
+            </div>
+            <div class="text">
+              <h3 style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+              <p><a href="{{ site.url }}{{ post.url }}">{{ post.description }}</a></p>
+            </div>
+          </li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -13,6 +13,7 @@ description: 课题展示
   <div class="n_list_c">
     <div class="n_right_bottom">
       <h1>Periscope</h1>
+       <h1>仿生软体</h1>{% for post in site.categories["soft-robotics"] %}
       {% for post in site.categories["soft-robotics"] %}
        <div style="margin-top:30px"></div>
       <h2 align="center"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
